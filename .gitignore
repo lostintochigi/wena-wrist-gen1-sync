@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+# Xcode / SwiftPM workspace state
+WenaSync.swiftpm/.swiftpm/
+.build/
+DerivedData/
+*.xcresult
+# Python
+venv/
+__pycache__/
+*.pyc
+# Synced data
+steps.csv
+*.csv.bak
