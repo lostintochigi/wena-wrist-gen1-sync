@@ -5,7 +5,8 @@ Read step data from a first-generation **Sony wena wrist** (band `WN-WB01`, Blue
 No Sony app, no Sony server: an iPhone app talks straight to the band over Bluetooth LE using
 the protocol reconstructed from the last official Android app.
 
-Unofficial. Not affiliated with Sony. Use at your own risk.
+Unofficial. Not affiliated with Sony. Use at your own risk. MIT licensed, except
+`battery_voltage_to_percentage.csv`, which is a calibration table taken from Sony's app.
 
 ## What you get
 
