@@ -120,3 +120,11 @@ Each row is one of the band's timestamped step buckets.
 | App refuses to open on the phone | Trust the developer profile: Settings > General > VPN & Device Management. |
 | Xcode says the device is unpaired / Developer Mode disabled | Accept the trust prompt on the phone and enable Developer Mode, then retry. |
 | Band not listed in iOS Settings > Bluetooth | Expected. Modern iOS hides it. Pair from the app. |
+
+## How this was made
+
+Sony's last Android app (`jp.co.sony.wena` 1.54) was decompiled with jadx. The UUID map lives in
+`WenaWristGATT`, the gen 1 sync order in `WenaFirstModelSyncLogic`, the record formats in
+`BLEPacketConverter`, and the first-time setup in `WenaDeviceSetting`. Details in
+[docs/PROTOCOL.md](docs/PROTOCOL.md). The battery table is the app's own
+`battery_voltage_to_percentage.csv`.
